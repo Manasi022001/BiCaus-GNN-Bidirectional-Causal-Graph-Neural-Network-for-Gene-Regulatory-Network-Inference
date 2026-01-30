@@ -13,32 +13,7 @@ Multi-Task Learning: Joint optimization of regression and classification objecti
 Superior Performance: +147.8% improvement in Pearson correlation, +62% lower MSE vs baseline GCN
 Biological Interpretability: Mechanistic insights into regulatory mechanisms
 
-Performance Highlights
-MetricBaseline GCNBiCaus-GNNImprovementPearson Correlation0.3260.807+147.8%MSE---62%Direction Accuracy~0.61~0.75+23.2%R²--+747.4%
-Architecture
-Input Graph
-    ↓
-┌─────────────────────────┐
-│   Dual-Pathway GNN      │
-├───────────┬─────────────┤
-│ Structure │  Context    │
-│ Pathway   │  Pathway    │
-│           │  (Chromatin │
-│           │  Attention) │
-└─────┬─────┴─────┬───────┘
-      └─────┬─────┘
-            ↓
-    Combined Embedding
-            ↓
-    ┌───────┴────────┐
-    ↓                ↓
-Regression      Classification
-(Strength)      (Direction)
- Quick Start
-Installation
-bash# Clone the repository
-git clone https://github.com/yourusername/bicaus-gnn.git
-cd bicaus-gnn
+
 
 # Create virtual environment
 python -m venv venv
