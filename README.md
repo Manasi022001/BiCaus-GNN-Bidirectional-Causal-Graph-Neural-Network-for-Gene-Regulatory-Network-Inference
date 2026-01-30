@@ -87,47 +87,7 @@ jupyter notebook
 
 # Open notebooks/MULTI-OMICS_WITH_GNN.ipynb
 📁 Project Structure
-bicaus-gnn/
-├── data/                       # Data directory
-│   ├── raw/                   # Raw data files
-│   ├── processed/             # Preprocessed data
-│   └── README.md              # Data documentation
-├── src/                       # Source code
-│   ├── __init__.py
-│   ├── models/                # Model architectures
-│   │   ├── __init__.py
-│   │   ├── bicaus_gnn.py     # BiCaus-GNN implementation
-│   │   ├── baseline_gcn.py   # Baseline GCN
-│   │   └── attention.py      # Chromatin-state attention
-│   ├── data/                  # Data processing
-│   │   ├── __init__.py
-│   │   ├── data_loader.py    # Dataset loaders
-│   │   └── preprocessing.py  # Preprocessing utilities
-│   ├── train.py               # Training script
-│   ├── evaluate.py            # Evaluation utilities
-│   └── utils.py               # Helper functions
-├── notebooks/                 # Jupyter notebooks
-│   └── MULTI-OMICS_WITH_GNN.ipynb
-├── results/                   # Experiment results
-│   ├── figures/              # Generated plots
-│   ├── models/               # Saved model checkpoints
-│   └── metrics/              # Performance metrics
-├── tests/                     # Unit tests
-│   ├── test_models.py
-│   ├── test_data.py
-│   └── test_utils.py
-├── docs/                      # Documentation
-│   ├── architecture.md       # Architecture details
-│   ├── data_format.md        # Data format specification
-│   └── training_guide.md     # Training guide
-├── .github/                   # GitHub specific files
-│   └── workflows/
-│       └── tests.yml         # CI/CD pipeline
-├── requirements.txt           # Python dependencies
-├── setup.py                   # Package setup
-├── .gitignore                # Git ignore file
-├── LICENSE                    # License file
-└── README.md                  # This file
+
 📖 Method Details
 Dataset
 The dataset consists of gene-gene interactions represented as a graph:
